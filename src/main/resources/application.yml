@@ -1,1 +1,5 @@
 name: "The demo site"
+server:
+  error:
+    whitelabel:
+      enabled: false

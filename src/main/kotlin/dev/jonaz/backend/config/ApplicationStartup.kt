@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationListener
 import org.springframework.stereotype.Component
 
 @Component
-class ApplicationStartup: ApplicationListener<ApplicationReadyEvent> {
+class ApplicationStartup : ApplicationListener<ApplicationReadyEvent> {
 
     override fun onApplicationEvent(event: ApplicationReadyEvent) {
         DatabaseInitializer()
