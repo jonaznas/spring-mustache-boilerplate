@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "dev.jonaz.backend"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
@@ -30,10 +30,6 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-core:0.22.1")
     implementation("org.jetbrains.exposed:exposed-jdbc:0.22.1")
     implementation("org.jetbrains.exposed:exposed-java-time:0.22.1")
-}
-
-tasks.withType<Test> {
-    useJUnitPlatform()
 }
 
 tasks.withType<KotlinCompile> {
